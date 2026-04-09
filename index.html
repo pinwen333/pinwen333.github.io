@@ -1,27 +1,63 @@
-<div class="welcome-screen">
-    <h1>您的名字 / 藝術工作室</h1>
-    <a href="works.EN.html" class="btn-ENGLISH">ENGLISH</a>
-    <a href="works.CN.html" class="btn-中文">中文</a>
-</div>
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>PINWEN SU | Portfolio</title>
+    <style>
+        /* 讓內容垂直、水平皆置中 */
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f8f8f8; /* 淺灰色背景，增加藝術感 */
+            font-family: serif;
+        }
 
-<style>
-    .welcome-screen {
-        height: 100vh; /* 佔滿全螢幕高度 */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: #f0f0f0; /* 也可以換成背景圖 */
-    }
-    .btn-get-started {
-        padding: 15px 30px;
-        border: 1px solid #333;
-        text-decoration: none;
-        color: #333;
-        transition: 0.3s;
-    }
-    .btn-get-started:hover {
-        background: #333;
-        color: #fff;
-    }
-</style>
+        .language-selection {
+            text-align: center;
+        }
+
+        h1 {
+            font-weight: 300;
+            margin-bottom: 40px;
+            letter-spacing: 2px;
+        }
+
+        .btn-container {
+            display: flex;
+            gap: 40px; /* 兩個按鈕之間的距離 */
+        }
+
+        .lang-btn {
+            text-decoration: none;
+            color: #333;
+            border: 1px solid #333;
+            padding: 12px 40px;
+            font-size: 18px;
+            transition: all 0.4s ease;
+        }
+
+        /* 滑鼠移上去的視覺效果 */
+        .lang-btn:hover {
+            background-color: #333;
+            color: #fff;
+            letter-spacing: 4px; /* 增加一點互動的優雅感 */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="language-selection">
+        <h1>YOUR NAME</h1>
+        
+        <div class="btn-container">
+            <!-- 連結到不同語言的資料夾路徑 -->
+            <a href="en/works.html" class="lang-btn">ENTER</a>
+            <a href="zh/works.html" class="lang-btn">進入網站</a>
+        </div>
+    </div>
+
+</body>
+</html>
